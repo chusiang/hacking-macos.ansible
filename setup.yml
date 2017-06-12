@@ -1,0 +1,28 @@
+#!/usr/bin/env ansible-playbook
+# ============================================================
+#  Author: Chu-Siang Lai / chusiang (at) drx.tw
+#  Blog: http://note.drx.tw
+#  Filename: setup.yml
+#  Modified: 2017-06-12 22:16
+#  Description: Setup the macOS with Ansible.
+# ============================================================
+
+---
+- name: play 'hacking-macos.ansible/setup.yml'
+  hosts: local
+
+  roles:
+    - { role: chusiang.vim-and-vi-mode, tags: vim }
+
+  vars_files:
+    - defaults/main.yml
+
+  tasks:
+    - name: include main tasks
+      include: tasks/main.yml
+
+  handlers:
+    - name: include main handlers
+      include: handlers/main.yml
+
+# vim: ft=ansible :

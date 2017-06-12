@@ -1,0 +1,7 @@
+---
+# tasks file for hacking-macos.ansible/
+
+- name: install homebrew cask packages of console
+  homebrew_cask: name={{ brew_cask_packages }} state=present
+
+# vim: ft=ansible :

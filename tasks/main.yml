@@ -1,0 +1,15 @@
+---
+# tasks file for hacking-macos.ansible/
+
+# Console
+- name: include console setup tasks
+  include: setup_console.yml
+
+- name: include console configure tasks
+  include: config_console.yml
+
+# Desktop
+- name: include desktop setup tasks
+  include: setup_desktop.yml
+
+# vim: ft=ansible :

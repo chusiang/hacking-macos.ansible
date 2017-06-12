@@ -1,0 +1,75 @@
+# defaults file for hacking-macos.ansible/
+
+# console
+brew_packages:
+  - ag
+  - ansible
+  - autojump
+  - bash-completion
+  - cmake
+  - docker-completion
+  - docker-compose
+  - docker-compose-completion
+  - gcal
+  - git
+  - git-flow
+  - glib
+  - htop
+  - irssi
+  - mosh
+  - packer
+  - packer-completion
+  - pandoc
+  #- postgresql
+  - redis
+  - sdcv
+  - ssh-copy-id
+  - tig
+  - tig
+  - tmate
+  - tmux
+  - tree
+  - vagrant-completion
+  - vifm
+  - vim
+  - w3m
+
+# pip
+pip_packages:
+  - requests
+  - speedtest-cli
+
+# Desktop
+brew_cask_packages:
+  - android-file-transfer
+  - appcleaner
+  - atom
+  - bartender
+  - calibre
+  - firefox
+  - google-chrome
+  - gpgtools
+  - iterm2
+  - keka
+  - libreoffice
+  - libreoffice-language-pack
+  - macdown
+  - macvim
+  - mysqlworkbench
+  - obs
+  - skype
+  - sourcetree
+  - telegram
+  - thunderbird
+  - vagrant
+  - vagrant-manager
+  - vlc
+  - xquartz
+  - packer
+    
+# need manual install package.
+# - 1password
+# - docker
+# - virtualbox
+
+# vim: ft=ansible :

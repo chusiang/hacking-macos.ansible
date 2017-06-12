@@ -1,0 +1,21 @@
+---
+# tasks file for hacking-macos.ansible/
+
+# homebrew
+- name: install homebrew packages of console
+  homebrew: name={{ brew_packages }} state=present
+
+# pip
+- name: Upgrade pip
+  become: true
+  pip:
+    name: pip
+    extra_args: --upgrade
+  tags: pip
+
+- name: install pip packages for console
+  become: true
+  pip: name={{ pip_packages }} state=present
+  tags: pip
+
+# vim: ft=ansible :

@@ -1,0 +1,32 @@
+#!/usr/bin/env ansible-playbook
+# ============================================================
+#  Author: Chu-Siang Lai / chusiang (at) drx.tw
+#  Blog: http://note.drx.tw
+#  Filename: setup_console.yml
+#  Modified: 2017-06-12 22:30
+#  Description: Setup console of macOS with Ansible.
+# ============================================================
+
+---
+- name: play 'hacking-macos.ansible/setup_console.yml'
+  hosts: local
+
+  roles:
+    - { role: chusiang.vim-and-vi-mode, tags: vim }
+
+  vars_files:
+    - defaults/main.yml
+
+  tasks:
+    # console
+    - name: include setup_console.yml
+      include: tasks/setup_console.yml
+
+    - name: include config_console.yml
+      include: tasks/config_console.yml
+
+  handlers:
+    - name: include main handlers
+      include: handlers/main.yml
+
+# vim: ft=ansible :
