@@ -4,35 +4,48 @@
 brew_packages:
   - ag
   - ansible
+  - ansible-lint
   - autojump
   - bash-completion
   - cmake
+  - cowsay
+  - ctags
   - docker-completion
   - docker-compose
   - docker-compose-completion
+  - flake8
   - gcal
   - git
   - git-flow
   - glib
+  - gnutls
+  - grep
   - htop
+  - ipython
   - irssi
+  - jsonlint
   - mosh
+  - node
   - packer
   - packer-completion
   - pandoc
-  #- postgresql
+  # - postgresql
   - redis
+  - rename
+  - screenfetch
   - sdcv
   - ssh-copy-id
-  - tig
   - tig
   - tmate
   - tmux
   - tree
+  - urlview
   - vagrant-completion
   - vifm
   - vim
   - w3m
+  - wget
+  - yamllint
 
 # pip
 pip_packages:
@@ -43,7 +56,7 @@ pip_packages:
 brew_cask_packages:
   - android-file-transfer
   - appcleaner
-  - atom
+  # - atom
   - bartender
   - calibre
   - firefox
@@ -66,10 +79,11 @@ brew_cask_packages:
   - vlc
   - xquartz
   - packer
-    
+
 # need manual install package.
 # - 1password
 # - docker
 # - virtualbox
+# - pokemonsay
 
 # vim: ft=ansible :
