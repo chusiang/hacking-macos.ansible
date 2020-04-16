@@ -18,4 +18,4 @@
   pip: name={{ pip_packages }} state=present
   tags: pip
 
-# vim: ft=ansible :
+# vim: ft=yaml.ansible :

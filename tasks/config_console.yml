@@ -34,4 +34,4 @@
   poll: 30
   tags: vim
 
-# vim: ft=ansible :
+# vim: ft=yaml.ansible :

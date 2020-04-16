@@ -86,4 +86,4 @@ brew_cask_packages:
 # - virtualbox
 # - pokemonsay
 
-# vim: ft=ansible :
+# vim: ft=yaml.ansible :

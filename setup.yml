@@ -25,4 +25,4 @@
     - name: include main handlers
       include: handlers/main.yml
 
-# vim: ft=ansible :
+# vim: ft=yaml.ansible :
