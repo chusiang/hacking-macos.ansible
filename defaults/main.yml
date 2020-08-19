@@ -26,6 +26,8 @@ brew_packages:
   - jsonlint
   - mosh
   - node
+  - openfortivpn
+  - openvpn
   - packer
   - packer-completion
   - pandoc
