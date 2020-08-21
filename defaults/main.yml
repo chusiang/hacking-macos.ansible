@@ -20,6 +20,7 @@ brew_packages:
   - glib
   - gnutls
   - grep
+  - gsed
   - htop
   - ipython
   - irssi
